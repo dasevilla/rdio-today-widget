@@ -1,0 +1,3 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "Rdio—Now Playing";
+"com.apple.notificationcenter.widget.description" = "Control Rdio";

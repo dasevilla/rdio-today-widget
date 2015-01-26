@@ -13,6 +13,13 @@
 		03207CA51A71AFBC00D17264 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03207CA41A71AFBC00D17264 /* Images.xcassets */; };
 		03207CA81A71AFBC00D17264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03207CA61A71AFBC00D17264 /* Main.storyboard */; };
 		03207CB41A71AFBC00D17264 /* Rdio_HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03207CB31A71AFBC00D17264 /* Rdio_HelperTests.m */; };
+		03207CC41A71AFD500D17264 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03207CC31A71AFD500D17264 /* NotificationCenter.framework */; };
+		03207CCB1A71AFD500D17264 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03207CC91A71AFD500D17264 /* InfoPlist.strings */; };
+		03207CCE1A71AFD500D17264 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03207CCD1A71AFD500D17264 /* TodayViewController.m */; };
+		03207CD01A71AFD500D17264 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03207CCF1A71AFD500D17264 /* TodayViewController.xib */; };
+		03207CD31A71AFD500D17264 /* Today Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03207CC11A71AFD500D17264 /* Today Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03207CD91A71B2BE00D17264 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03207CD81A71B2BE00D17264 /* ScriptingBridge.framework */; };
+		03207CDB1A71D79600D17264 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03207CA41A71AFBC00D17264 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,28 @@
 			remoteGlobalIDString = 03207C961A71AFBC00D17264;
 			remoteInfo = "Rdio Helper";
 		};
+		03207CD11A71AFD500D17264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03207C8F1A71AFBC00D17264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03207CC01A71AFD500D17264;
+			remoteInfo = Rdio;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03207CD71A71AFD500D17264 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03207CD31A71AFD500D17264 /* Today Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03207C971A71AFBC00D17264 /* Rdio Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rdio Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,11 +61,21 @@
 		03207C9F1A71AFBC00D17264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03207CA11A71AFBC00D17264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		03207CA21A71AFBC00D17264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		03207CA41A71AFBC00D17264 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03207CA41A71AFBC00D17264 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Rdio Helper/Images.xcassets"; sourceTree = "<group>"; };
 		03207CA71A71AFBC00D17264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03207CAD1A71AFBC00D17264 /* Rdio HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rdio HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03207CB21A71AFBC00D17264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03207CB31A71AFBC00D17264 /* Rdio_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rdio_HelperTests.m; sourceTree = "<group>"; };
+		03207CC11A71AFD500D17264 /* Today Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03207CC31A71AFD500D17264 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		03207CC71A71AFD500D17264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03207CCA1A71AFD500D17264 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03207CCC1A71AFD500D17264 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		03207CCD1A71AFD500D17264 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		03207CCF1A71AFD500D17264 /* TodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
+		03207CD81A71B2BE00D17264 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		03207CDA1A71B32800D17264 /* RdioDesktop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioDesktop.h; sourceTree = "<group>"; };
+		03EF34181A76F00600C00F2D /* Today Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Today Widget.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +93,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03207CBE1A71AFD500D17264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03207CD91A71B2BE00D17264 /* ScriptingBridge.framework in Frameworks */,
+				03207CC41A71AFD500D17264 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		03207C8E1A71AFBC00D17264 = {
 			isa = PBXGroup;
 			children = (
+				03207CA41A71AFBC00D17264 /* Images.xcassets */,
 				03207C991A71AFBC00D17264 /* Rdio Helper */,
 				03207CB01A71AFBC00D17264 /* Rdio HelperTests */,
+				03207CC51A71AFD500D17264 /* Today Widget */,
+				03207CC21A71AFD500D17264 /* Frameworks */,
 				03207C981A71AFBC00D17264 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +122,7 @@
 			children = (
 				03207C971A71AFBC00D17264 /* Rdio Helper.app */,
 				03207CAD1A71AFBC00D17264 /* Rdio HelperTests.xctest */,
+				03207CC11A71AFD500D17264 /* Today Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +134,6 @@
 				03207C9D1A71AFBC00D17264 /* AppDelegate.m */,
 				03207CA11A71AFBC00D17264 /* ViewController.h */,
 				03207CA21A71AFBC00D17264 /* ViewController.m */,
-				03207CA41A71AFBC00D17264 /* Images.xcassets */,
 				03207CA61A71AFBC00D17264 /* Main.storyboard */,
 				03207C9A1A71AFBC00D17264 /* Supporting Files */,
 			);
@@ -116,6 +166,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		03207CC21A71AFD500D17264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03207CD81A71B2BE00D17264 /* ScriptingBridge.framework */,
+				03207CC31A71AFD500D17264 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03207CC51A71AFD500D17264 /* Today Widget */ = {
+			isa = PBXGroup;
+			children = (
+				03207CDA1A71B32800D17264 /* RdioDesktop.h */,
+				03207CCC1A71AFD500D17264 /* TodayViewController.h */,
+				03207CCD1A71AFD500D17264 /* TodayViewController.m */,
+				03207CCF1A71AFD500D17264 /* TodayViewController.xib */,
+				03207CC61A71AFD500D17264 /* Supporting Files */,
+			);
+			path = "Today Widget";
+			sourceTree = "<group>";
+		};
+		03207CC61A71AFD500D17264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03EF34181A76F00600C00F2D /* Today Widget.entitlements */,
+				03207CC71A71AFD500D17264 /* Info.plist */,
+				03207CC91A71AFD500D17264 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,10 +207,12 @@
 				03207C931A71AFBC00D17264 /* Sources */,
 				03207C941A71AFBC00D17264 /* Frameworks */,
 				03207C951A71AFBC00D17264 /* Resources */,
+				03207CD71A71AFD500D17264 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03207CD21A71AFD500D17264 /* PBXTargetDependency */,
 			);
 			name = "Rdio Helper";
 			productName = "Rdio Helper";
@@ -154,6 +237,23 @@
 			productReference = 03207CAD1A71AFBC00D17264 /* Rdio HelperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		03207CC01A71AFD500D17264 /* Today Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03207CD41A71AFD500D17264 /* Build configuration list for PBXNativeTarget "Today Widget" */;
+			buildPhases = (
+				03207CBD1A71AFD500D17264 /* Sources */,
+				03207CBE1A71AFD500D17264 /* Frameworks */,
+				03207CBF1A71AFD500D17264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Widget";
+			productName = Rdio;
+			productReference = 03207CC11A71AFD500D17264 /* Today Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +269,15 @@
 					03207CAC1A71AFBC00D17264 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 03207C961A71AFBC00D17264;
+					};
+					03207CC01A71AFD500D17264 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = C9A275Q223;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -187,6 +296,7 @@
 			targets = (
 				03207C961A71AFBC00D17264 /* Rdio Helper */,
 				03207CAC1A71AFBC00D17264 /* Rdio HelperTests */,
+				03207CC01A71AFD500D17264 /* Today Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +315,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03207CBF1A71AFD500D17264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03207CDB1A71D79600D17264 /* Images.xcassets in Resources */,
+				03207CD01A71AFD500D17264 /* TodayViewController.xib in Resources */,
+				03207CCB1A71AFD500D17264 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03207CBD1A71AFD500D17264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03207CCE1A71AFD500D17264 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +364,11 @@
 			isa = PBXTargetDependency;
 			target = 03207C961A71AFBC00D17264 /* Rdio Helper */;
 			targetProxy = 03207CAE1A71AFBC00D17264 /* PBXContainerItemProxy */;
+		};
+		03207CD21A71AFD500D17264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03207CC01A71AFD500D17264 /* Today Widget */;
+			targetProxy = 03207CD11A71AFD500D17264 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -246,6 +379,14 @@
 				03207CA71A71AFBC00D17264 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03207CC91A71AFD500D17264 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03207CCA1A71AFD500D17264 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -385,6 +526,38 @@
 			};
 			name = Release;
 		};
+		03207CD51A71AFD500D17264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Today Widget/Today Widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03207CD61A71AFD500D17264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Today Widget/Today Widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +577,7 @@
 				03207CB91A71AFBC00D17264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03207CBA1A71AFBC00D17264 /* Build configuration list for PBXNativeTarget "Rdio HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +586,16 @@
 				03207CBC1A71AFBC00D17264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03207CD41A71AFD500D17264 /* Build configuration list for PBXNativeTarget "Today Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03207CD51A71AFD500D17264 /* Debug */,
+				03207CD61A71AFD500D17264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

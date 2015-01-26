@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController">
+            <connections>
+                <outlet property="albumArtworkImageView" destination="1qI-UH-hd5" id="Or7-vT-L77"/>
+                <outlet property="artistNameLabel" destination="eD4-dO-EGM" id="qxO-ub-5hd"/>
+                <outlet property="playPauseBtn" destination="vrb-Ha-wmn" id="A8y-fl-dKe"/>
+                <outlet property="trackNameLabel" destination="pxt-mm-EuN" id="oBZ-jL-W4C"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="110"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="pxt-mm-EuN">
+                    <rect key="frame" x="108" y="82" width="219" height="18"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Track name" id="cE4-QN-jcH">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-dO-EGM">
+                    <rect key="frame" x="108" y="58" width="219" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Artist" id="OW5-RX-cgX">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="S8K-J1-zno">
+                    <rect key="frame" x="105" y="5" width="67" height="43"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Player Previous" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Cr1-i8-0Nv">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <accessibility description="Previous Button"/>
+                    <connections>
+                        <action selector="previousBtn:" target="-2" id="HD6-bA-moZ"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="vrb-Ha-wmn">
+                    <rect key="frame" x="181" y="5" width="67" height="43"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Player Play" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="cQY-fQ-PUx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <accessibility description="Play Button"/>
+                    <connections>
+                        <action selector="playPauseBtn:" target="-2" id="ePh-OO-Dd3"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1qI-UH-hd5">
+                    <rect key="frame" x="0.0" y="5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5yn-8W-hrP"/>
+                        <constraint firstAttribute="width" constant="100" id="He3-6A-GYQ"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="Qxz-U6-jIZ"/>
+                </imageView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="zi0-iZ-ZCg">
+                    <rect key="frame" x="253" y="5" width="66.5" height="43"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Player Next" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="tqn-L7-T2M">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <accessibility description="Next Button"/>
+                    <connections>
+                        <action selector="nextBtn:" target="-2" id="Q2t-1i-IsO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zi0-iZ-ZCg" firstAttribute="leading" secondItem="vrb-Ha-wmn" secondAttribute="trailing" constant="5" id="5NY-hG-TFL"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="width" secondItem="zi0-iZ-ZCg" secondAttribute="width" id="5aK-WJ-lhf"/>
+                <constraint firstItem="1qI-UH-hd5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="5oN-38-Vlg"/>
+                <constraint firstItem="eD4-dO-EGM" firstAttribute="top" secondItem="pxt-mm-EuN" secondAttribute="bottom" constant="8" id="9Qv-qU-Byz"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="height" secondItem="zi0-iZ-ZCg" secondAttribute="height" id="DQQ-Dp-Kql"/>
+                <constraint firstAttribute="trailing" secondItem="pxt-mm-EuN" secondAttribute="trailing" constant="5" id="DRT-Ul-1B2"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="bottom" secondItem="1qI-UH-hd5" secondAttribute="bottom" id="GaY-qU-8DR"/>
+                <constraint firstItem="vrb-Ha-wmn" firstAttribute="bottom" secondItem="1qI-UH-hd5" secondAttribute="bottom" id="R57-pO-DsL"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="height" secondItem="vrb-Ha-wmn" secondAttribute="height" id="R6r-fD-coZ"/>
+                <constraint firstAttribute="trailing" secondItem="zi0-iZ-ZCg" secondAttribute="trailing" constant="10" id="RIH-KX-6al"/>
+                <constraint firstItem="pxt-mm-EuN" firstAttribute="top" secondItem="1qI-UH-hd5" secondAttribute="top" constant="5" id="Ugu-hJ-pau"/>
+                <constraint firstItem="vrb-Ha-wmn" firstAttribute="leading" secondItem="S8K-J1-zno" secondAttribute="trailing" constant="10" id="VUO-py-Vqb"/>
+                <constraint firstItem="pxt-mm-EuN" firstAttribute="leading" secondItem="1qI-UH-hd5" secondAttribute="trailing" constant="10" id="YDA-CL-PbX"/>
+                <constraint firstItem="eD4-dO-EGM" firstAttribute="leading" secondItem="1qI-UH-hd5" secondAttribute="trailing" constant="10" id="cLb-pK-g28"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vrb-Ha-wmn" secondAttribute="bottom" id="cUK-MC-JrM"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="leading" secondItem="1qI-UH-hd5" secondAttribute="trailing" constant="5" id="hpM-Kw-D7L"/>
+                <constraint firstItem="S8K-J1-zno" firstAttribute="width" secondItem="vrb-Ha-wmn" secondAttribute="width" id="htB-aX-a1G"/>
+                <constraint firstAttribute="bottom" secondItem="1qI-UH-hd5" secondAttribute="bottom" constant="5" id="iqe-Am-75A"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="S8K-J1-zno" secondAttribute="bottom" id="j4g-WR-QGz"/>
+                <constraint firstItem="zi0-iZ-ZCg" firstAttribute="top" secondItem="eD4-dO-EGM" secondAttribute="bottom" constant="10" id="m9R-7H-NGE"/>
+                <constraint firstItem="zi0-iZ-ZCg" firstAttribute="bottom" secondItem="1qI-UH-hd5" secondAttribute="bottom" id="smM-Ri-AvW"/>
+                <constraint firstAttribute="trailing" secondItem="eD4-dO-EGM" secondAttribute="trailing" constant="5" id="uRN-bA-oba"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zi0-iZ-ZCg" secondAttribute="bottom" id="vQD-78-18d"/>
+                <constraint firstItem="1qI-UH-hd5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="yeT-mG-hy6"/>
+            </constraints>
+            <point key="canvasLocation" x="598" y="532"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Player Next" width="50" height="50"/>
+        <image name="Player Play" width="50" height="50"/>
+        <image name="Player Previous" width="50" height="50"/>
+    </resources>
+</document>
